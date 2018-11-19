@@ -10,8 +10,8 @@ namespace ASTC
     {
         public static void Register(HttpConfiguration config)
         {
-            var cors = new EnableCorsAttribute("www.example.com", "*", "*");
-            config.EnableCors();
+            var cors = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors(cors);
             // Web API configuration and services
 
             // Web API routes
